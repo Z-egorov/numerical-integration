@@ -1,0 +1,2 @@
+1) input of new formulas for calculating a definite integral
+2) creating a graphic interface
