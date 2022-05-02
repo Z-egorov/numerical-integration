@@ -5,15 +5,13 @@
 
 
 int main () {
-    int type;
+    std::string type;
 
-    std::cout << "Select the number of the function: \n 1)linear\n 2)quadratic\n";
+    std::cout << "Select the function: \n 1)linear\n 2)quadratic\n";
     std::cin >> type;
 
-    // switch (type) {
     int method, lim_a, lim_b;
-    // case 1: {
-    if(type == 1){
+    if(type == "linear"){
         int k, b;
         std::cout <<  "Type k, b coefficients and limits: \n";
         std::cin >> k >> b >> lim_a >> lim_b;
@@ -26,7 +24,7 @@ int main () {
             linear_function.Newton();
         }
     }
-    else if (type == 2){
+    else if (type == "quadratic"){
         int a, b, c;
         std::cout <<  "Type a, b, c coefficients and limits: \n";
         std::cin >> a >> b >> c >> lim_a >> lim_b;
@@ -39,6 +37,6 @@ int main () {
             quadratic_function.Newton();
         }
     }
-    // }
+
     return 0;
 }
